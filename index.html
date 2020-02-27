@@ -9,6 +9,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- <script src="js/main.js"></script> -->
 	<link href="style.css" rel="stylesheet">
 	<style type="text/css">
 		.navbar{
@@ -19,8 +20,9 @@
 <body>
 
 <!-- Navigation navbar-expand-md navbar-light bg-light sticky-top   -->
-<nav class="navbar navbar-expand-md bg-light navbar-light sticky-top ">
-	<div class="container-fluid">
+<div class="fixed-top">
+	<nav class="navbar navbar-expand-md bg-light navbar-light sticky-top ">
+	<div class="container">
 		<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
@@ -29,25 +31,25 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active px-0">
-					<a class="nav-link" href="#">Home</a>
+					<a class="nav-link" href="">Home</a>
 				</li>
 				<li class="nav-item px-0 ">
-					<a class="nav-link" href="#">About</a>
+					<a class="nav-link" data-target="#about" href="#">About Us</a>
 				</li>
 				<li class="nav-item px-0">
-					<a class="nav-link" href="#">Services</a>
+					<a class="nav-link" data-target="#services" href="#">Services</a>
 				</li>
 				<li class="nav-item px-0">
-					<a class="nav-link" href="#">Team</a>
+					<a class="nav-link" data-target="#portfolio">Portfolio</a>
 				</li>
 				<li class="nav-item px-0">
-					<a class="nav-link" href="#">Contact Us</a>
+					<a class="nav-link" data-target="#contact" href="#">Contact Us</a>
 				</li>
 			</ul>
 		</div>
 	</div>
 </nav>
-
+</div>
 
 
 <!--- Image Slider -->
@@ -78,10 +80,8 @@
 	</div>
 </div>
 
-
-
 <!--- Jumbotron -->
-<div class="container-fluid">
+<div class="container">
 	<div class="row jumbotron">
 		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
 			<p class="lead">A web hosting service that allows individuals and organizations to make thier website accessible via the world wide web</p>
@@ -96,43 +96,9 @@
 </div>
 
 
-<!--- Welcome Section -->
-<div class="container-fluid padding">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">Built with ease</h1>
-		</div>
-		<hr>
-		<div class="col-12">
-			<p class="lead">Welcome to my Bootstrap 4 website tutorial! Bootstrap is a free and open-source front-end library with HTML and CSS based designs</p>
-		</div>
-	</div>
-</div>
-<!--- Three Column Section -->
-<div class="container-fluid padding">
-	<div class="row text-center padding">
-		<div class="col-xs-12 col-sm6 col-md-4">
-			<i class="fas fa-code"></i>
-			<h3>HTML5</h3>
-			<p>Buitl with the latest version of HTML, HTML5</p>
-		</div>
-		<div class="col-xs-12 col-sm6 col-md-4">
-			<i class="fas fa-bold"></i>
-			<h3>Bootstrap</h3>
-			<p>Buitl with the latest version of Bootstrap, Bootstrap 4</p>
-		</div>
-		<div class="col-sm6 col-md-4">
-			<i class="fab fa-css3"></i>
-			<h3>CSS3</h3>
-			<p>Buitl with the latest version of CSS, CSS3</p>
-		</div>
-	</div>
-	<hr class="my-4">
-</div>
-
-
-<!--- Two Column Section -->
-<div class="container-fluid padding">
+<!--- About Us Column Section -->
+<div class="container padding" id="about">
+	<h2 class="text-center">About Us</h2>
 	<div class="row padding">
 		<div class="col-lg-6">
 			<h2>if you build it...</h2>
@@ -148,6 +114,115 @@
 	</div>
 </div>
 
+<!--- Services Column Section -->
+<div class="container padding services" id="services">
+	<h2 class="text-center">Services</h2>
+	<div class="row">
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="fas fa-clock"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="fas fa-clock"></i></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="fas fa-clock"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="fas fa-clock"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="fas fa-clock"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="fas fa-clock"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+	<hr class="my-4">
+</div>
+
+<!-- ======= Our Portfolio Section ======= -->
+
+<div class="container padding" id="portfolio">
+	<h2 class="text-center">Our Portfolio</h2>
+
+	<div class="row text-center">
+	  <div class="col-lg-12" id="myBtnContainer">
+	    <button class="btn1 active" onclick="filterSelection('all')">ALL</button>
+		<button class="btn1" onclick="filterSelection('nature')"> APP</button>
+		<button class="btn1 " onclick="filterSelection('cars')"> CARD</button>
+		<button class="btn1" onclick="filterSelection('people')"> WEB</button>
+	  </div>
+	</div>
+
+	<!-- Portfolio Gallery Grid -->
+	<div class="row">
+		<div class="col-lg-4 col-md-6 columne nature">
+			<div class="contente">
+		      <img src="img/portfolio/portfolio-1.jpg" alt="Mountains" style="width:100%">
+		    </div>
+		</div>
+
+
+	  <div class="col-lg-4 col-md-6 columne nature">
+	    <div class="contente">
+	      <img src="img/portfolio/portfolio-2.jpg" alt="Lights" style="width:100%">
+	    </div>
+	  </div>
+
+	  <div class="col-lg-4 col-md-6 columne nature">
+	    <div class="contente">
+	      <img src="img/portfolio/portfolio-3.jpg" alt="Nature" style="width:100%">
+	    </div>
+	  </div>
+
+	  <div class="col-lg-4 col-md-6 columne cars">
+	    <div class="contente">
+	      <img src="img/portfolio/portfolio-4.jpg" alt="Car" style="width:100%">
+	    </div>
+	  </div>
+	  <div class="col-lg-4 col-md-6 columne cars">
+	    <div class="contente">
+	      <img src="img/portfolio/portfolio-5.jpg" alt="Car" style="width:100%">
+	    </div>
+	  </div>
+	  <div class="col-lg-4 col-md-6 columne cars">
+	    <div class="contente">
+	      <img src="img/portfolio/portfolio-6.jpg" alt="Car" style="width:100%">
+	    </div>
+	  </div>
+
+	  <div class="col-lg-4 col-md-6 columne people">
+	    <div class="contente">
+	      <img src="img/portfolio/portfolio-7.jpg" alt="People" style="width:100%">
+	    </div>
+	  </div>
+	  <div class="col-lg-4 col-md-6 columne people">
+	    <div class="contente">
+	      <img src="img/portfolio/portfolio-8.jpg" alt="People" style="width:100%">
+	    </div>
+	  </div>
+	  <div class="col-lg-4 col-md-6 columne people">
+	    <div class="contente">
+	      <img src="img/portfolio/portfolio-9.jpg" alt="People" style="width:100%">
+	    </div>
+	  </div>
+
+	</div>
+</div>
+
+<!-- ========End of Our Portfolio Section =========   -->
 <hr class="my-4">
 <!--- Fixed background -->
 <figure>
@@ -161,7 +236,7 @@
 <!--- Emoji Section -->
 <button class="fun" data-toggle="collapse" data-target="#emoji">click for fun</button>
   <div id="emoji" class="collapse">
-  	<div class="container-fluid padding">
+  	<div class="container padding">
   		<div class="row text-center">
   			<div class="col-sm-6 col-md-3">
   				<img class="gif" src="img/gif/panda.gif">
@@ -179,7 +254,7 @@
   	</div>
   </div>
 <!--- Meet the team -->
-<div class="container-fluid padding">
+<div class="container padding">
 	<div class="row welcome text-center">
 		<div class="col-12">
 			<h1 class="display-4">Meet the Team</h1>
@@ -188,7 +263,7 @@
 </div>
 
 <!--- Cards -->
-<div class="container-fluid padding">
+<div class="container padding">
 	<div class="row padding">
 		<div class="col-md-4">
 			<div class="card">
@@ -225,7 +300,7 @@
 
 
 <!--- Two Column Section -->
-<div class="container-fluid padding">
+<div class="container padding">
 	<div class="row padding">
 		<div class="col-lg-6">
 			<h2>Our Philosophy</h2>
@@ -242,7 +317,7 @@
 
 
 <!--- Connect -->
-<div class="container-fluid padding">
+<div class="container padding">
 	<div class="row text-center padding">
 		<div class="col-12">
 			<h2>Connect</h2>
@@ -257,76 +332,88 @@
 	</div>
 </div>
 
-<!--- Footer -->
-<footer>
-	<div class="container-fluid padding">
-		<div class="row text-center">
-			<div class="col-md-4">
-				<img src="img/w3newbie.png">
-				<hr class="light">
-				<p>555-555-555</p>
-				<p>email@gmail.com</p>
-				<p>100 Street Name</p>
-				<p>Westlands,Nairobi/p>
-			</div>
+<div class="container padding" style="background-color: #666;color: #fff;" id="contact">
+    <div class="col-12 text-center">
+      <h2>Contact Us</h2>
+      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div>
 
-			<div class="col-md-4">
-				<hr class="light">
-				<h5>Our hours</h5>
-				<hr class="light">
-				<p>weekdays :9am - 5pm</p>
-				<p>Saturday: Closed</p>
-				<p>Sunday: 10am-3pm</p>
-			</div>
+    <div class="row">
 
-			<div class="col-md-4">
-				<hr class="light">
-				<h5>Our Services</h5>
-				<hr class="light">
-				<p>City, State, Zipcode</p>
-				<p>City, State, Zipcode</p>
-				<p>City, State, Zipcode</p>
-			</div>
+      <div class="col-lg-4 col-md-6">
+        <div class="contact-about">
+          <h3>Amoeba</h3>
+          <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+            <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+            <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
 
-			<div class="col-12">
-				<hr class="light-100">
-				<h6>&copy; w3newbie.com</h6>
-			</div>
-	</div>
-</footer>
+      <div class="col-lg-3 col-md-6">
+        <div class="info">
+          <div>
+            <i class="icofont-google-map"></i>
+            <p>A108 Adam Street<br>New York, NY 535022</p>
+          </div>
 
+          <div>
+            <i class="icofont-envelope"></i>
+            <p>info@example.com</p>
+          </div>
 
+          <div>
+            <i class="icofont-phone"></i>
+            <p>+1 5589 55488 55s</p>
+          </div>
 
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-md-12">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <!-- <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div> -->
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+<!-- ======= Contact Us Section ======= -->
+    <div class="container text-center padding" >
+      <div class="copyright">
+        &copy; <strong><span>VertexHub Group Limited</span></strong>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+<!-- Template Main JS File -->
+  <script src="js/main.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <!--- Check out w3newbie Templates & Courses! -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
- <div style="float:left; max-width: 48%; margin: .5rem; padding: 0; border: .5rem solid #666;">
- 	<a href="https://w3newbie.com/templates/" target="_blank" style="z-index: 100; cursor: pointer!important;"><img src="https://www.w3newbie.com/wp-content/uploads/w3newbie-templates-zip.png" style="max-width: 100%; min-width: 100%;"></a>
-</div>
- <div style="float:left; max-width: 48%; margin: .5rem; padding: 0; border: .5rem solid #666;">
- 	<a href="https://w3newbie.com/courses/" target="_blank" style="z-index: 100; cursor: pointer!important;"><img src="https://www.w3newbie.com/wp-content/uploads/w3newbie-courses-zip.png" style="max-width: 100%; min-width: 100%;"></a>
-</div>
-<br style="clear: both;">
-<div style="max-width: 52%; margin: 2rem auto; padding: 0; border: .5rem solid #666;">
- 	<a href="https://w3newbie.com/hosting/" target="_blank" style="z-index: 100; cursor: pointer!important;"><img src="https://www.w3newbie.com/wp-content/uploads/web-hosting-zip.jpg" style="max-width: 100%; min-width: 100%;"></a>
-</div> -->
- <!--- Check out w3newbie Templates & Courses! -->
-
-
-
